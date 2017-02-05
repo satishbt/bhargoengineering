@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hari Bhargo</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+
+<link href="css/hari_brgo.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+
+function slideSwitch() {
+    var $active = $('#slideshow img.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow img:first');
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+$(document).ready(function(){
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+});
+
+
+</script>
+</head>
+
+<body>
+<div id="outer" class="container">
+  <div id="header">
+  <div class="clearfix">
+    <div id="logo" class="pull-left"></div><!--end of the logo div -->
+    <h1 class="headername pull-left" >HARI BARGO ENGINEERING</h1>
+    </div>
+<div id="nav" class="clearfix">
+   <ul id="nav" class="unstyled ">
+      <li class="nav_text"><a href="index.htm">Home</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="about_us.htm">About Us</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="services.htm">Services</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="management_expertise.htm">Management Expertise</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="plant_facility.htm">Plant Facility</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+       <li class="nav_text"><a href="contact.htm">Contact</a></li>
+    </ul><!-- nav -->
+    </div><!--end of the nav div -->
+  </div><!--end of the header div -->
+  <div id="slideshow">
+  <div id="topcurve">
+
+  </div><!--end of the topcurve div -->
+  <div id="bottomcurve">
+
+  </div><!--end of the bottomcurve div -->
+  <div>
+    <img src="pics/slide2.jpg" class="active"/>
+    <img src="pics/slide3.jpg"/>
+    <img src="pics/slide4.jpg"/>
+    <img src="pics/slide5.jpg"/>
+    <img src="pics/slide6.jpg"/>
+    <img src="pics/slide7.jpg"/>
+  </div>
+
+  </div><!--end of the slideshow div -->
+
+  <div id="centercontent">
+      <div id="Contact">
+  <h4>Contact</h4>
+  <div class="row-fluid">
+  <div id="left_block" class="span6">
+  <div id="address">
+  
+  <address>
+  <strong>HARI BARGO ENGINEERING</strong><br>
+
+  Bangalore, Karnataka.<br>
+  <abbr title="Phone">P:</abbr> (080) ********
+</address>
+   
+  </div>
+  <div id="map">
+  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="img-polaroid" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=Bangalore,+Bengaluru,+Karnataka,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=40.052282,86.572266&amp;ie=UTF8&amp;geocode=FU_uxQAdw_-fBA&amp;split=0&amp;hq=&amp;hnear=Bangalore,+Bengaluru,+Karnataka,+India&amp;ll=12.971599,77.594563&amp;spn=0.193045,0.338173&amp;t=m&amp;z=12&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;q=Bangalore,+Bengaluru,+Karnataka,+India&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=40.052282,86.572266&amp;ie=UTF8&amp;geocode=FU_uxQAdw_-fBA&amp;split=0&amp;hq=&amp;hnear=Bangalore,+Bengaluru,+Karnataka,+India&amp;ll=12.971599,77.594563&amp;spn=0.193045,0.338173&amp;t=m&amp;z=12" style="color:#cb0911;text-align:left" target="_blank">View Larger Map</a></small>
+  </div>
+  </div>
+  <div id="right_block" class="span5">
+  
+  <form class="form-horizontal" form action="send_mail.php" method="post">
+  <fieldset>
+   <legend>Cotact Us</legend>
+  <div class="control-group">
+    <label class="control-label" for="inputName">Name : </label>
+    <div class="controls">
+     
+      <input type="text" id="inputName" name="name" placeholder="Name">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Email : </label>
+    <div class="controls">
+      <input type="email" id="inputEmail"  name="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputNumber">Contact Number : </label>
+    <div class="controls">
+      <input type="text" id="inputNumber" placeholder="Contact Number" name="number">
+    </div>
+  </div>
+
+<div class="control-group">
+    <label class="control-label" for="inputEnquiry">Enquiry : </label>
+    <div class="controls">
+ <textarea rows="5" cols="20" name="enquiry" id="inputEnquiry" name="enquiry"></textarea>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <button type="reset" class="btn btn-info">Clear</button>
+  	  <button type="submit" class="btn">Send Enquiry</button>
+
+      
+    </div>
+  </div></fieldset>
+</form>
+  
+    </div>
+  
+  
+  </div><!--end of the Aboutus div -->
+</div>
+      </div><!--end of the centercontent div -->
+  <div id="footer">
+ <p class="parafooter"> &copy; 2013 Hari Bargo Engineering Stamping &amp; Tooling (BEST) &reg; All Rights Reserved.</p>
+  </div><!--end of the footer div -->
+</div><!--end of the outer div -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hari Bhargo</title>
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<link href="css/hari_brgo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+
+function slideSwitch() {
+    var $active = $('#slideshow img.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow img:first');
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+$(document).ready(function(){
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+});
+
+
+</script>
+</head>
+
+<body>
+<div id="outer" class="container">
+  <div id="header">
+  <div class="clearfix">
+    <div id="logo" class="pull-left"></div><!--end of the logo div -->
+    <h1 class="headername pull-left" >HARI BARGO ENGINEERING</h1>
+    </div>
+    <div id="nav" class="clearfix">
+   <ul id="nav" class="unstyled ">
+      <li class="nav_text"><a href="index.htm">Home</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="about_us.htm">About Us</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="services.htm">Services</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="management_expertise.htm">Management Expertise</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="plant_facility.htm">Plant Facility</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+       <li class="nav_text"><a href="contact.htm">Contact</a></li>
+    </ul><!-- nav -->
+    </div><!--end of the nav div -->
+  </div><!--end of the header div -->
+  <div id="slideshow">
+  <div id="topcurve">
+
+  </div><!--end of the topcurve div -->
+  <div id="bottomcurve">
+
+  </div><!--end of the bottomcurve div -->
+  <div>
+    <img src="pics/slide2.jpg" class="active"/>
+    <img src="pics/slide3.jpg"/>
+    <img src="pics/slide4.jpg"/>
+    <img src="pics/slide5.jpg"/>
+    <img src="pics/slide6.jpg"/>
+    <img src="pics/slide7.jpg"/>
+  </div>
+
+
+  </div><!--end of the slideshow div -->
+
+  <div id="centercontent">
+      <div id="Aboutus">
+  <h4>Services</h4>
+  
+  </div><!--end of the Aboutus div -->
+
+      </div><!--end of the centercontent div -->
+  <div id="footer">
+ <p class="parafooter"> &copy; 2013 Hari Bargo Engineering Stamping & Tooling (BEST) &reg; All Rights Reserved.</p>
+  </div><!--end of the footer div -->
+</div><!--end of the outer div -->
+</body>
+</html>

@@ -1,0 +1,188 @@
+﻿ 
+*{	margin:auto;	padding:0;	vertical-align:top;}
+body {
+	margin: 0;	padding: 0;	color: #000;}
+#outer{	padding:0;	font-weight:inherit;	font-style:inherit;	font-size:100%;
+	vertical-align:baseline;	border-left:0;	background-image:url(../pics/mainbg.jpg);	background-repeat:no-repeat;
+	min-height:875px;	background-size:cover;	background-attachment:fixed;}
+#header {	width:950px;
+	min-height:170px;	position:relative;	background-color:#f7cb60;	margin:auto;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.2);
+	}
+#logo {
+	float:left;
+	width:130px;
+	height:131px;
+	background-image:url(../pics/hari_bargo_logo.png);
+	margin-left:10px;
+	position:relative;
+	display:inline-block;
+	}
+.headername {
+	float: left;
+	font-family:"Myriad Web Pro";
+	font-size:35px;
+	position:relative;
+	display:inline-block;
+	font-weight:normal;
+	width:455px;
+	color:#cb0911;
+	margin-top:55px;
+	}
+#nav {
+	width:950px;
+	min-height:35px;
+	position:relative;
+	display:inline-block;
+	font-family: "Myriad Web Pro";
+	}
+#nav li {
+  list-style: none;
+  
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size:17px;
+  position:relative;
+  display:inline-block;
+  margin:auto;
+}
+#nav li.nav_text a {
+  color: #910e05;
+  text-decoration: none;
+  display: block; min-width:45px; padding:0 20px; 
+}
+#nav li.img_divdr{ vertical-align:bottom}
+#nav li.img_divdr img{color: #910e05;
+  text-decoration: none;
+  display: block; min-width:5px; padding:0 2px; }
+#nav li a:hover {
+	color:#f16600;
+}
+#home .home a, #home .home a:hover,
+#About Us .About Us a, #About Us .About Us a:hover,
+#Services .Services a, #Services .Services a:hover,
+#Management Expertise .Management Expertise a, #Management Expertise .Management Expertise a:hover,
+#Plant Facility .Plant Facility a, #Plant Facility .Plant Facility a:hover
+#Contact .Contact a, #Contact .Contact a:hover
+
+{
+  background-color: #FFF;
+  color: #000;
+  cursor: default;
+}
+#slideshow {
+	width:950px;
+	min-height:342px;
+	position:relative;
+	background-color:rgb(247, 203, 96);
+	margin:auto;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.2);
+	}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+#topcurve {
+    width:950px;
+	 min-height:96px;
+	 position: absolute; top:0;left:0; right:0;
+	 display:inline-block;
+	 background-image:url(../pics/h_b_radius_shape_up.png);
+	 z-index:12;
+	  
+	  opacity:0.8;
+filter:alpha(opacity=80); /* For IE8 and earlier */
+	 }
+#bottomcurve {
+    width:950px;
+	 min-height:168px;
+	 position: absolute; bottom:0px;;left:0; right:0;
+
+	 display:inline-block;
+	 background-image:url(../pics/h_b_radius_shape_down.png);
+	 z-index:12;
+	 
+	  
+	 }
+#centercontent {
+	width:950px;
+	min-height:320px;
+	position:relative;
+	background-color:#f7ce65;
+	margin:auto;
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.2);
+	}
+#footer {
+	width:950px;
+	height:45px;
+	position:relative;
+	background-color:#fadb8d;
+	margin:auto;
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.2);
+	}
+#box {
+	width:325px;
+	height:290px;
+	position:relative;
+	display:inline-block;
+	background-color:#f7cb5c;
+	float:left;
+	margin: 15px 0px 0px 15px;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+	}
+#mission {
+	width:580px;
+	height:115px;
+	position:relative;
+	display:inline-block;
+	margin: 15px 15px 0px 0px;
+	float:right;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+	}
+.para1 {
+	font-family:"Myriad Web Pro";
+	font-size:14px;
+	color: #000;
+	text-align:left;
+	width:530px;
+	margin:auto;
+	margin-top:10px;
+	line-height:18px;
+	}
+.spanmission {
+	font-size:19px;
+	color:#930B0B;
+	}
+#vission {
+	width:580px;
+	height:160px;
+	position:relative;
+	display:inline-block;
+	margin: 15px 15px 0px 0px;
+	float:right;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+	}
+.parafooter {
+	font-family:"Myriad Web Pro";
+	font-size:14px;
+	color: #c10e0e;
+	text-align:center;
+	width:950px;
+	line-height:45px;
+	}

@@ -1,0 +1,104 @@
+﻿ 
+*{	margin:auto;	padding:0;	vertical-align:top;}
+body {	margin: 0;	padding: 0;	color: #000;background-image:url(../pics/mainbg.jpg);	background-repeat:no-repeat;background-color:rgb(247, 203, 96);background-size:cover;	background-attachment:fixed;}
+#outer{	padding:0;	font-weight:inherit;	font-style:inherit;	font-size:100%;
+	vertical-align:baseline;	border-left:0; ;	
+	min-height:875px;	}
+@media (min-width: 1200px){
+
+.container {width: 950px;box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);}
+}
+#header { min-height:170px;	position:relative;	background-color:#f7cb60;	margin:auto;}
+#logo {width:130px;height:131px;background-image:url(../pics/hari_bargo_logo.png);margin-left:10px;	position:relative;display:inline-block;	}
+.headername { 	font-size:35px;	position:relative;	display:inline-block;	font-weight:normal; 	color:#cb0911;	margin-top:5%;}
+#nav {	min-height:35px;	position:relative; margin: auto;text-align: center;	}
+#nav li { height: 35px;  line-height: 35px; text-align: center;  font-size:17px;  position:relative;  display:inline-block;
+  margin:auto;}
+  
+#nav li.nav_text  { }
+#nav li.nav_text a {  color: #910e05;  text-decoration: none;  display: block; min-width:45px; padding:0 20px;text-shadow: 0 1px 0 rgba(230, 230, 230, 0.69); 
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-ms-transition-duration: 1s;
+-o-transition-duration: 1s;
+transition-duration: 1s;
+}
+#nav li.img_divdr{ vertical-align:bottom}
+#nav li.img_divdr img{color: #910e05;  text-decoration: none;  display: block; min-width:5px; padding:0 2px; }
+#nav li a:hover {	color:#f16600;text-shadow: 0 1px 0 rgba(109, 109, 109, 0.69);
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-ms-transition-duration: 1s;
+-o-transition-duration: 1s;
+transition-duration: 1s;}
+#nav li.nav_text:hover{background-color: rgba(199, 64, 0, 0.05);
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-ms-transition-duration: 1s;
+-o-transition-duration: 1s;
+transition-duration: 1s;
+}
+#home .home a, #home .home a:hover,
+#About Us .About Us a, #About Us .About Us a:hover,
+#Services .Services a, #Services .Services a:hover,
+#Management Expertise .Management Expertise a, #Management Expertise .Management Expertise a:hover,
+#Plant Facility .Plant Facility a, #Plant Facility .Plant Facility a:hover
+#Contact .Contact a, #Contact .Contact a:hover{ background-color: #FFF;  color: #000;  cursor: default;}
+#slideshow {min-height:342px;	position:relative;	background-color:rgb(247, 203, 96);	margin:auto;}
+
+#slideshow IMG {  position:absolute;    top:0;    left:0;    z-index:8;}
+#slideshow IMG.active {    z-index:10;}
+#slideshow IMG.last-active {    z-index:9;}
+#topcurve {    width:950px;	 min-height:96px;	 position: absolute; top:0;left:0; right:0;	 display:inline-block; background-image:url(../pics/h_b_radius_shape_up2.png);	 z-index:12;	  opacity:0.8;filter:alpha(opacity=80); /* For IE8 and earlier */ }
+#bottomcurve {   width:950px;	 min-height:168px;	 position: absolute; bottom:0px;;left:0; right:0; display:inline-block;	 background-image:url(../pics/h_b_radius_shape_down2.png);	 z-index:12; }
+#centercontent {min-height:320px;position:relative;background-color:#f7ce65;	margin:auto;}
+#footer {width:950px;	height:45px;	position:relative;	background-color:#fadb8d;	margin:auto;	border-radius: 0px 0px 15px 15px;	}
+#box {	height:290px;position:relative;	display:inline-block;	background-color:#f7cb5c; border-radius: 10px;	}
+#mission { height:115px;position:relative;display:inline-block;	margin: 15px 15px 0px 0px;	border-radius: 10px;	}
+.para1 {	font-size:14px;	color: #000;	text-align:left;	 	margin:auto;	margin-top:10px;	line-height:18px;	}
+.spanmission {	font-size:19px;	color:#930B0B;	margin-bottom: 0;	}
+#vission {height:160px;	position:relative;	display:inline-block;	margin: 15px 15px 0px 0px; 	border-radius: 10px;}
+.parafooter {font-size:12px;	color: #c10e0e;	text-align:center;	width:950px;line-height:45px;text-shadow: 0 1px 0 rgb(252, 252, 252);}
+#Aboutus{ margin:auto;	padding-top:20px;margin-left: 15%;margin-right:2%}
+#Contact{ margin:auto;	padding-top:20px;}
+ul.b {list-style-type:square;}
+ul {margin-bottom:0px;}
+p.cont {margin-bottom: 0px;line-height:25px;}
+
+#Management{margin:auto;	padding-top:20px;margin-left: 15%;margin-right:2%}
+
+#plant{margin:auto;	padding-top:20px;margin-left: 15%; margin-right:2%}
+
+#slideshow2 {margin-left: 5px;	position:relative;	background-color:rgb(247, 203, 96);	}
+
+#slideshow2 img {   position:absolute;   top:0;    left:0;    z-index:8;}
+
+#slideshow2 IMG.active {   z-index:10;}
+
+#slideshow2 IMG.last-active {   z-index:9;}
+h4{color:rgb(147, 11, 11);text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.36); margin-left:5px}
+.table-bordered {border: 1px solid rgba(71, 71, 71, 0.74);}
+.table-bordered th, .table-bordered td {border-left: 1px solid rgba(71, 71, 71, 0.74);}
+.table th, .table td {border-top: 1px solid rgba(71, 71, 71, 0.74)}
+#left_block.span6{padding:0 0 0 3% }
+dd{}
+p{text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); padding-left:5%; text-align:justify}
+
+dd, li{text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);text-align:justify;	margin-bottom: 1%;}
+legend{
+				border-bottom: 1px solid rgba(51, 51, 51, 0.28);
+}
+#slideshow2 .img-polaroid {padding: 4px;background-color: rgb(209, 209, 209);}
+#organization_chart{width:100%; height:1000px; position:relative; margin:auto}
+div[data-org-chart]{width:100px; min-height:50px; background-color:white; text-align:center!important; padding:10px; position:absolute; z-index:2000}
+div[data-org-chart] p {
+				text-align:center
+}
+#hari_bhargo{top:0%; left:35%; }
+#Planning{top:200px;right:16%}
+#Manufacturing{top:200px; left:16%}
+#Shift_1{top:350px; width:100px; left:0}
+#GeneralShift{top:350px;width:100px; left:250px}
+#Shift_2{top:350px;width:100px;; left:450px}
+#Logistics{top:350px;width:100px;;right:0px}
+ 

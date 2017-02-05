@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Hari Bhargo</title>
+<link href="css/style_reset.css" rel="stylesheet" type="text/css" />
+<link href="css/hari_brgo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+ 
+function slideSwitch() {
+    var $active = $('#slideshow img.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow img:first');
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+$(document).ready(function(){
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+});
+ 
+
+</script>
+</head>
+
+<body>
+<div id="outer">
+  <div id="header">
+    <div id="logo">
+    </div><!--end of the logo div -->
+    <h4 class="headername">HARI BARGO ENGINEERING</h4>
+    <div id="nav">
+   <ul id="nav">
+      <li class="nav_text"><a href="#">Home</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="#">About Us</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="#">Services</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="#">Management Expertise</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+      <li class="nav_text"><a href="#">Plant Facility</a></li>
+      <li class="img_divdr"><img src="pics/navimage.png" /></li>
+       <li class="nav_text"><a href="#">Contact</a></li>
+    </ul><!-- nav -->
+    </div><!--end of the nav div -->
+  </div><!--end of the header div -->
+  <div id="slideshow">
+  <div id="topcurve">
+  
+  </div><!--end of the topcurve div -->
+  <div id="bottomcurve">
+  
+  </div><!--end of the bottomcurve div -->
+  <div>
+    <img src="pics/slide1.jpg" class="active" />
+    <img src="pics/slide2.jpg" class="active" />
+  </div>
+  
+  </div><!--end of the slideshow div -->
+  
+  <div id="centercontent">
+    <div id="box">
+    
+    </div><!--end of the box div -->
+    <div id="mission">
+    <p class="para1"><span class="spanmission">Vision</span><br /><br />
+Hari Bargo Engineering Stamping & Tooling aims at becoming the leader in supplying Automobile ancillaries to Multinational OEMs.</p>
+    </div><!--end of the mission div -->
+    
+    <div id="vission">
+    <p class="para1"><span class="spanmission">Mission</span><br /><br />
+In order to achieve our goal, we will devote and commit all our resources towards our customer's satisfaction. To deliver components at the Right Quality, Right Quantity, Right Time and Competitive Cost has been our principle and will be the driving force for the future. We also believe in the policy of continuous improvement and are more than willing to update our infrastructure or our methods to cater the needs of our customers.</p>
+    </div><!--end of the vission div -->
+  </div><!--end of the centercontent div -->
+  <div id="footer">
+ <p class="parafooter"> © 2013 Hari Bargo Engineering Stamping & Tooling (BEST) ‐ All Rights Reserved.</p>
+  </div><!--end of the footer div -->
+</div><!--end of the outer div -->
+</body>
+</html>
