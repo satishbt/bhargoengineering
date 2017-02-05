@@ -6,6 +6,7 @@
   "description": "Deployment ",
   "dependencies": {
     "express": "latest",
+	"compression": "1.6.2",
     "fs": "latest"
   }
 

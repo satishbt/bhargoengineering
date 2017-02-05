@@ -1,8 +1,8 @@
-
 #!/bin/env node
 //  OpenShift sample Node application
 var express = require('express');
 var fs = require('fs');
+var compression = require('compression');
 
 var publicDirectory = "public_html"; // Edit this accordingly
 
@@ -132,10 +132,10 @@ var MyApp = function() {
         self.setupTerminationHandlers();
         
         // Create Express server
-        self.app = express.createServer();
-        
+     //   self.app = express.createServer();
+		self.app = express();
         // Gzip content
-        self.app.use(express.compress()); 
+        self.app.use(compression()); 
 
         // Browser Cache
         var oneDay = 86400000;
