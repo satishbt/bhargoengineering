@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "0.0.1",
-  "main":"server.js",
+  "scripts": {"start": "node server.js"},
   "author":"Bhargo",
   "description": "Deployment ",
   "dependencies": {
@@ -9,5 +9,6 @@
 	"compression": "1.6.2",
     "fs": "latest"
   }
+  
 
 }
